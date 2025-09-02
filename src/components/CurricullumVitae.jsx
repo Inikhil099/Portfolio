@@ -12,13 +12,9 @@ function CurricullumVitae({curriculumref}) {
     <div ref={curriculumref} className="mx-auto px-4 py-16">
       <div className="mx-auto max-w-2xl text-center">
         <h2 className="text-3xl md:text-4xl font-bold">CURRICULLUM VITAE</h2>
-        <p className="mt-2">
-          A small sampling of some of the projects I've worked on as a student.
-        </p>
       </div>
-
-      <div className="mt-10 grid gap-10 lg:grid-cols-[340px_minmax(0,1fr)]">
-        <div className="flex flex-col items-center">
+      <div className="mt-10 flex justify-around gap-y-10 flex-wrap items-center">
+        <div className="flex flex-col items-center max-w-[450px]">
           <img
             src={myimg}
             alt="Profile"
@@ -76,7 +72,7 @@ function CurricullumVitae({curriculumref}) {
           </div>
         </div>
 
-        <div className="space-y-6">
+        <div className="space-y-6 max-w-[450px]">
           <SectionBlock title="Profile">
             <p>
               I am an Aspiring Web Developer with a strong foundation in HTML,

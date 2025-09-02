@@ -13,7 +13,7 @@ const projectsarray = [
   },
   {
     img: shorty,
-    title: "Shorty Links - URL Shortening Service",
+    title: "Shorty Links - URL Shortener",
     stack: "MERN",
     link: "https://shortylinks.vercel.app/",
   },
