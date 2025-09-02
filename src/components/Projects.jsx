@@ -31,9 +31,9 @@ const projectsarray = [
   },
 ];
 
-function Projects() {
+function Projects({projectsref}) {
   return (
-    <div className="mx-auto px-4 py-16">
+    <div ref={projectsref} className="mx-auto px-4 py-16">
       <div className="mx-auto max-w-2xl text-center">
         <h2 className="text-3xl md:text-4xl font-bold">Projects</h2>
         <p className=" mt-2">

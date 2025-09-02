@@ -1,9 +1,9 @@
 import React from "react";
 import { Link } from "react-router-dom";
 
-function ContactMe() {
+function ContactMe({contactref}) {
   return (
-    <div className="contact">
+    <div ref={contactref} className="contact">
       <div className="container mx-auto px-4 py-16 text-white">
         <div className="text-center ">
           <h2 className="text-3xl md:text-4xl font-bold">CONTACT ME</h2>

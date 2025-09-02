@@ -7,9 +7,9 @@ import SectionBlock from "./SectionBlock";
 import { IoMail } from "react-icons/io5";
 import { FaLocationDot } from "react-icons/fa6";
 
-function CurricullumVitae() {
+function CurricullumVitae({curriculumref}) {
   return (
-    <div className="mx-auto px-4 py-16">
+    <div ref={curriculumref} className="mx-auto px-4 py-16">
       <div className="mx-auto max-w-2xl text-center">
         <h2 className="text-3xl md:text-4xl font-bold">CURRICULLUM VITAE</h2>
         <p className="mt-2">

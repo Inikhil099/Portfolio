@@ -4,13 +4,17 @@ import ContactMe from "./components/ContactMe";
 import Projects from "./components/Projects";
 import CurricullumVitae from "./components/CurricullumVitae";
 import Skills from "./components/Skills";
-import { useState } from "react";
+import { useRef, useState } from "react";
 
 export default function PortfolioReplica() {
   const [darkmode, setdarkmode] = useState(false)
+  const skillsref = useRef(null)
+  const projectsref = useRef(null)
+  const curriculumref = useRef(null)
+  const contactref = useRef(null)
   return (
     <div className={`min-h-screen ${darkmode ? "text-white bg-gray-950" : ""} text-slate-900 bg-gray-200`}>
-      <Navbar darkmode={darkmode} setdarkmode={setdarkmode} />
+      <Navbar skillsref={skillsref} projectsref={projectsref} curriculumref={curriculumref}contactref={contactref} darkmode={darkmode} setdarkmode={setdarkmode} />
 
       <div className="h-[70vh] bgimage md:h-[80vh] flex items-center justify-center">
         <div className="p-6 flex flex-col items-center gap-3 text-center">
@@ -23,13 +27,13 @@ export default function PortfolioReplica() {
         </div>
       </div>
 
-      <Skills/>
+      <Skills skillsref={skillsref}/>
 
-      <Projects />
+      <Projects projectsref={projectsref}/>
 
-      <CurricullumVitae />
+      <CurricullumVitae curriculumref={curriculumref}/>
 
-      <ContactMe />
+      <ContactMe contactref={contactref} />
       <Footer />
     </div>
   );
