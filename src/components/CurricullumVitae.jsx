@@ -13,7 +13,7 @@ function CurricullumVitae({curriculumref}) {
       <div className="mx-auto max-w-2xl text-center">
         <h2 className="text-3xl md:text-4xl font-bold">CURRICULLUM VITAE</h2>
       </div>
-      <div className="mt-10 flex justify-center gap-y-10 flex-wrap items-center">
+      <div className="mt-10 flex justify-center gap-y-10 gap-x-10 flex-wrap items-center">
         <div className="flex flex-col items-start max-w-[450px]">
           <img
             src={myimg}
