@@ -9,12 +9,12 @@ import { FaLocationDot } from "react-icons/fa6";
 
 function CurricullumVitae({curriculumref}) {
   return (
-    <div ref={curriculumref} className="mx-auto px-4 py-16">
+    <div ref={curriculumref} className="mx-auto px-4 py-16 mb-5">
       <div className="mx-auto max-w-2xl text-center">
         <h2 className="text-3xl md:text-4xl font-bold">CURRICULLUM VITAE</h2>
       </div>
-      <div className="mt-10 flex justify-around gap-y-10 flex-wrap items-center">
-        <div className="flex flex-col items-center max-w-[450px]">
+      <div className="mt-10 flex justify-center gap-y-10 flex-wrap items-center">
+        <div className="flex flex-col items-start max-w-[450px]">
           <img
             src={myimg}
             alt="Profile"
@@ -29,7 +29,7 @@ function CurricullumVitae({curriculumref}) {
             New Delhi
           </span>
 
-          <div className="flex gap-3 justify-center items-center py-5">
+          <div className="flex gap-3 justify-center py-5">
             <Link
               to={"https://www.linkedin.com/in/nikhil-r-b234a329b?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app"}
               className="rounded-full bg-purple-700 cursor-pointer socials hover:bg-purple-500 p-2 text-white"
@@ -44,9 +44,9 @@ function CurricullumVitae({curriculumref}) {
             </Link>
           </div>
 
-          <div className="mt-6 text-center ">
+          <div className="mt-6 text-start ">
             <p className="font-semibold">Technical Skills</p>
-            <div className="mt-2 space-y-1  px-5 text-start text-sm">
+            <div className="mt-2 space-y-1  text-start text-sm">
               <div>
                 <span className="font-semibold text-lg text-center">
                   Frontend -{" "}
