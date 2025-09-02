@@ -13,7 +13,7 @@ export default function PortfolioReplica() {
   const curriculumref = useRef(null)
   const contactref = useRef(null)
   return (
-    <div className={`min-h-screen ${darkmode ? "text-white bg-gray-950" : ""} text-slate-900 bg-gray-200`}>
+    <div className={`min-h-screen ${darkmode ? "text-white bg-gray-900" : ""} text-slate-900 bg-gray-200`}>
       <Navbar skillsref={skillsref} projectsref={projectsref} curriculumref={curriculumref}contactref={contactref} darkmode={darkmode} setdarkmode={setdarkmode} />
 
       <div className="h-[70vh] bgimage md:h-[80vh] flex items-center justify-center">
