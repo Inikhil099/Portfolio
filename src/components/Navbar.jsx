@@ -17,7 +17,7 @@ function Navbar({
     <nav
       className={`sticky top-0 z-50 ${
         darkmode ? "bg-white text-gray-800" : "bg-slate-900 text-white"
-      } transition-all duration-1000`}
+      } transition-all duration-1000 overflow-hidden`}
     >
       <div className="mx-auto flex flex-wrap items-center justify-between px-5 py-3">
         <Link to="/" className="font-extrabold text-lg">
