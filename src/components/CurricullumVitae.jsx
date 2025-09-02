@@ -36,13 +36,13 @@ function CurricullumVitae({curriculumref}) {
           <div className="flex gap-3 justify-center items-center py-5">
             <Link
               to={"https://www.linkedin.com/in/nikhil-r-b234a329b?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app"}
-              className="rounded-full bg-purple-700 cursor-pointer  hover:bg-purple-500 p-2 text-white"
+              className="rounded-full bg-purple-700 cursor-pointer socials hover:bg-purple-500 p-2 text-white"
             >
               <FaLinkedinIn className="h-4 w-4" />
             </Link>
             <Link
               to={"https://github.com/inikhil099"}
-              className="rounded-full bg-purple-700 cursor-pointer hover:bg-purple-500 p-2 text-white"
+              className="rounded-full bg-purple-700 cursor-pointer socials hover:bg-purple-500 p-2 text-white"
             >
               <LuGithub className="h-4 w-4" />
             </Link>
