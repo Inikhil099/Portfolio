@@ -14,7 +14,7 @@ function CurricullumVitae({curriculumref}) {
         <h2 className="text-3xl md:text-4xl font-bold">CURRICULLUM VITAE</h2>
       </div>
       <div className="mt-10 flex justify-center gap-y-10 gap-x-10 flex-wrap items-center">
-        <div className="flex flex-col items-start max-w-[450px]">
+        <div className="flex flex-col items-center max-w-[450px]">
           <img
             src={myimg}
             alt="Profile"
@@ -44,7 +44,7 @@ function CurricullumVitae({curriculumref}) {
             </Link>
           </div>
 
-          <div className="mt-6 text-start ">
+          <div className="mt-6  p-2.5 text-start shadow-lg">
             <p className="font-semibold">Technical Skills</p>
             <div className="mt-2 space-y-1  text-start text-sm">
               <div>

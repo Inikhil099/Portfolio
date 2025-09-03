@@ -17,7 +17,7 @@ function Navbar({
     <nav
       className={`sticky top-0 z-50 ${
         darkmode ? "bg-white text-gray-800" : "bg-slate-900 text-white"
-      } transition-all duration-1000 overflow-hidden`}
+      } transition-all duration-1000`}
     >
       <div className="mx-auto flex flex-wrap items-center justify-between px-5 py-3">
         <Link to="/" className="font-extrabold text-lg">
@@ -63,7 +63,7 @@ function Navbar({
                 }}
                 className="hover:text-sky-400"
               >
-                Curricullum Vitae
+                CV
               </Link>
             </li>
             <li>
@@ -81,7 +81,7 @@ function Navbar({
           <div className="md:hidden">
             <FaBars
               onClick={() => {
-                setisSidebarOpen(!isSidebarOpen);
+                setisSidebarOpen(true);
               }}
               className="text-2xl md:hidden cursor-pointer"
             />
@@ -89,8 +89,8 @@ function Navbar({
         </div>
       </div>
       <div
-        className={`h-screen w-[60%] flex justify-center transition duration-300 absolute right-0 bg-slate-900  text-white ${
-          isSidebarOpen ? "translate-x-0" : " translate-x-full"
+        className={`h-screen right-0 flex justify-center duration-300 absolute overflow-hidden transition-all bg-slate-900  text-white ${
+          isSidebarOpen ? "w-[300px]" : "w-0"
         }`}
       >
         <div className="absolute right-6 top-5 cursor-pointer text-xl"><ImCross className=" cursor-pointer text-xl" onClick={()=>{setisSidebarOpen(false)}}/></div>
@@ -126,7 +126,7 @@ function Navbar({
                 }}
                 className="p-2.5 hover:border-b border-b-purple-200 transition-all duration-150"
               >
-                Curricullum Vitae
+                CV
               </Link>
             </li>
             <li>
